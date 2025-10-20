@@ -2,20 +2,31 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Registro de Usuarios</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h2>Registro de Usuario</h2>
-    <form id="formRegistro">
-        <input type="text" id="nombre" placeholder="Nombre completo" required><br>
-        <input type="email" id="email" placeholder="Correo" required><br>
-        <button type="submit">Registrar</button>
-    </form>
 
-    <br>
-    <a href="listar.html">Ver usuarios registrados</a>
+    <header>
+        <h1>📁 Gestión de Usuarios</h1>
+    </header>
 
-    <script src="js/app.js"></script>
+    <main class="inicio">
+        <section class="intro">
+            <h2>Bienvenido</h2>
+            <p>Este sistema te permite registrar, administrar y visualizar los usuarios de forma sencilla y eficiente.</p>
+        </section>
+
+        <div class="acciones">
+            <a href="registrar.php" class="btn">➕ Registrar Usuario</a>
+            <a href="listar.php" class="btn">📋 Ver Lista de Usuarios</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Sistema de Gestión de Usuarios | PHP & MySQL</p>
+    </footer>
+
 </body>
 </html>
+
