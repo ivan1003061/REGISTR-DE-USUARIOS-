@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+form {
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+input, button {
+    margin: 5px;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
