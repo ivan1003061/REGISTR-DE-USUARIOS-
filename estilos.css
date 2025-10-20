@@ -1,80 +1,111 @@
-/* ======= GENERAL ======= */
+/* ======= ESTILO GLOBAL ======= */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #e0f0ff, #ffffff);
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
     margin: 0;
     padding: 0;
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ======= ENCABEZADO ======= */
 header {
-    background-color: #007bff;
-    color: white;
+    background: #0a74da;
+    color: #fff;
+    text-align: center;
     padding: 25px 0;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 28px;
+    font-size: 1.6rem;
     letter-spacing: 1px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-/* ======= CONTENIDO PRINCIPAL ======= */
-main.inicio {
+/* ======= CONTENEDOR ======= */
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 30px;
     text-align: center;
-    padding: 50px 20px;
 }
 
-.intro h2 {
-    color: #007bff;
-    margin-bottom: 10px;
-    font-size: 24px;
+/* ======= FORMULARIOS ======= */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.intro p {
-    font-size: 17px;
-    color: #555;
-    width: 60%;
-    margin: auto;
-    margin-bottom: 40px;
-    line-height: 1.5;
+input[type="text"], input[type="email"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+
+input:focus {
+    border-color: #0a74da;
+    box-shadow: 0 0 5px rgba(10,116,218,0.3);
+    outline: none;
 }
 
 /* ======= BOTONES ======= */
-.acciones {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
+button, a.btn {
+    background: #0a74da;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 15px;
     border-radius: 8px;
-    font-size: 17px;
-    transition: 0.3s;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    font-size: 15px;
 }
 
-.btn:hover {
-    background-color: #0056b3;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+button:hover, a.btn:hover {
+    background: #004e9b;
 }
 
-/* ======= PIE DE PÁGINA ======= */
+/* ======= TABLAS ======= */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+th {
+    background-color: #0a74da;
+    color: #fff;
+    padding: 14px;
+    font-weight: 500;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #f6faff;
+}
+
+/* ======= PIE ======= */
 footer {
     text-align: center;
-    padding: 15px;
-    background-color: #f1f1f1;
-    color: #555;
+    margin-top: auto;
+    padding: 15px 0;
     font-size: 14px;
-    margin-top: 60px;
-    border-top: 1px solid #ddd;
+    color: #666;
 }
